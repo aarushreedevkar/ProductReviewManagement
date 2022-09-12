@@ -4,9 +4,6 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("**********Welcome To Product Review Management********");
-            //UC1
-            //Creating a List of ProductReview and Adding values into List.
             List<ProductReview> productReviewlist = new List<ProductReview>()
             {
                 new ProductReview() { ProductId = 1, UserId = 1, Rating = 5, Review = "Excelent", isLike = true },
@@ -25,7 +22,7 @@
             //{
             //    Console.WriteLine("Product Id :" + list.ProductId + "\t" + "User Id :" + list.UserId + "\t" + "Rating :" + list.Rating + "\t" + "Review :" + list.Review + "\t" + "Is Like :" + list.isLike);
             //}
-            ProductManagement.RetrieveCountOfReviewForEachProductId(productReviewlist);
+            ProductManagement.RetrieveProductIDAndReviewOfAllRecords(productReviewlist);
             Console.ReadLine();
         }
     }
