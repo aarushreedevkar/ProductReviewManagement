@@ -22,7 +22,7 @@
             //{
             //    Console.WriteLine("Product Id :" + list.ProductId + "\t" + "User Id :" + list.UserId + "\t" + "Rating :" + list.Rating + "\t" + "Review :" + list.Review + "\t" + "Is Like :" + list.isLike);
             //}
-            ProductManagement.SkipTopFiveRecords(productReviewlist);
+            ProductManagement.RetrieveProductIDAndReviewUsingLambdaSyntax(productReviewlist);
             Console.ReadLine();
         }
     }
